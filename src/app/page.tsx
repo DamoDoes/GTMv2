@@ -87,6 +87,8 @@ export default function Home() {
                 onStateSelect={selectState}
                 onDistrictSelect={selectDistrict}
                 metricOverlay={filters.metricOverlay}
+                protests={data.protests}
+                trendsByDistrict={data.trendsByDistrict}
               />
             </div>
           </div>

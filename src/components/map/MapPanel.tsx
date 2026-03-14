@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import type { ScoredState, Campus, DistrictMeta, FilterState } from "@/types";
+import type { ScoredState, Campus, DistrictMeta, FilterState, ProtestEvent } from "@/types";
 
 const MapInner = dynamic(() => import("./MapInner"), { ssr: false });
 
@@ -12,12 +12,10 @@ interface Props {
   onStateSelect: (abbr: string | null) => void;
   onDistrictSelect: (code: string | null) => void;
   metricOverlay: string;
+  protests: ProtestEvent[];
+  trendsByDistrict: Record<string, unknown>;
 }
 
 export default function MapPanel(props: Props) {
-  return (
-    <div className="w-full h-full">
-      <MapInner {...props} />
-    </div>
-  );
+  return <MapInner {...props} />;
 }

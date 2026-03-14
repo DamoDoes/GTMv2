@@ -14,6 +14,8 @@ const DEFAULT_FILTERS: FilterState = {
     districts: false,
     anomalies: true,
     heatmap: false,
+    protests: false,
+    trends: false,
   },
   metricOverlay: "composite",
 };

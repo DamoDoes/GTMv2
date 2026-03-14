@@ -14,6 +14,15 @@ const METRICS = [
   { key: "urbanConcentrationScore", label: "Urban Conc." },
 ];
 
+const LAYER_LABELS: Record<string, string> = {
+  campuses: "🎓 Campuses",
+  anomalies: "⚠ Anomalies",
+  protests: "🪧 Protests",
+  heatmap: "🔥 Heatmap",
+  trends: "📊 Trends",
+  districts: "📍 Districts",
+};
+
 interface Props {
   view: string;
   onViewChange: (v: "command" | "explore" | "target") => void;
@@ -66,20 +75,20 @@ export default function Shell({
 
         {/* Layer toggles */}
         {view === "command" && (
-          <div className="flex items-center gap-3 ml-auto">
+          <div className="flex items-center gap-2 ml-auto">
             <span className="text-[9px] text-[var(--text-muted)] uppercase tracking-wider">Layers</span>
             {(Object.keys(filters.layers) as Array<keyof FilterState["layers"]>).map((layer) => (
               <button
                 key={layer}
                 onClick={() => toggleLayer(layer)}
                 className={cn(
-                  "px-2 py-0.5 text-[9px] font-mono uppercase rounded border transition-colors",
+                  "px-2 py-0.5 text-[9px] font-mono rounded border transition-colors",
                   filters.layers[layer]
                     ? "border-[var(--accent-cyan)]/50 text-[var(--accent-cyan)] bg-[var(--accent-cyan)]/10"
                     : "border-[var(--border)] text-[var(--text-muted)] hover:border-[var(--text-muted)]"
                 )}
               >
-                {layer}
+                {LAYER_LABELS[layer] || layer}
               </button>
             ))}
 

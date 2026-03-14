@@ -128,7 +128,7 @@ export interface PrimaryResult {
 }
 
 export interface ScoringConfig {
-  alpha: number; // 0 = all civic, 1 = all acquisition
+  alpha: number;
   acquisitionWeights: Record<string, number>;
   civicWeights: Record<string, number>;
 }
@@ -167,6 +167,8 @@ export interface FilterState {
     districts: boolean;
     anomalies: boolean;
     heatmap: boolean;
+    protests: boolean;
+    trends: boolean;
   };
   metricOverlay: string;
 }
@@ -178,6 +180,9 @@ export interface ProtestEvent {
   description: string;
   size?: number;
   issue?: string;
+  locality?: string;
+  valence?: string;
+  actor?: string;
   [key: string]: unknown;
 }
 
@@ -191,4 +196,18 @@ export interface PoliticianIssues {
     }>;
     statewide_themes?: string[];
   };
+}
+
+// Trends data
+export interface DistrictTrends {
+  [districtCode: string]: {
+    [topic: string]: number; // 0-100 interest score
+  };
+}
+
+// Primary dates
+export interface PrimaryDate {
+  state: string;
+  date: string;
+  type?: string;
 }
