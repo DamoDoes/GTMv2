@@ -1,0 +1,519 @@
+{
+  "_meta": {
+    "source": "FEC Individual Contributions (Bulk Data)",
+    "cycle": 2024,
+    "url": "https://www.fec.gov/data/browse-data/?tab=bulk-data",
+    "generated": "2026-03-11",
+    "note": "Itemized contributions only (>$200 reporting threshold). Sub-$200 contributions that appear are voluntarily reported."
+  },
+  "AK": {
+    "totalAmount": 24520791.0,
+    "totalCount": 180600,
+    "smallDollarAmount": 5549952.0,
+    "smallDollarCount": 159158,
+    "smallDollarShare": 0.8813,
+    "avgContribution": 135.77,
+    "contributionsPerCapita": 0.3248,
+    "amountPerCapita": 44.1
+  },
+  "AL": {
+    "totalAmount": 86620946.0,
+    "totalCount": 509117,
+    "smallDollarAmount": 15039532.0,
+    "smallDollarCount": 453284,
+    "smallDollarShare": 0.8903,
+    "avgContribution": 170.14,
+    "contributionsPerCapita": 0.1313,
+    "amountPerCapita": 22.34
+  },
+  "AR": {
+    "totalAmount": 122397183.0,
+    "totalCount": 332382,
+    "smallDollarAmount": 9291718.0,
+    "smallDollarCount": 302999,
+    "smallDollarShare": 0.9116,
+    "avgContribution": 368.24,
+    "contributionsPerCapita": 0.142,
+    "amountPerCapita": 52.28
+  },
+  "AZ": {
+    "totalAmount": 196790216.0,
+    "totalCount": 1570534,
+    "smallDollarAmount": 44068527.0,
+    "smallDollarCount": 1410920,
+    "smallDollarShare": 0.8984,
+    "avgContribution": 125.3,
+    "contributionsPerCapita": 0.2727,
+    "amountPerCapita": 34.16
+  },
+  "CA": {
+    "totalAmount": 2281980948.0,
+    "totalCount": 8409479,
+    "smallDollarAmount": 242572741.0,
+    "smallDollarCount": 7188313,
+    "smallDollarShare": 0.8548,
+    "avgContribution": 271.36,
+    "contributionsPerCapita": 0.2756,
+    "amountPerCapita": 74.78
+  },
+  "CO": {
+    "totalAmount": 224435494.0,
+    "totalCount": 1221594,
+    "smallDollarAmount": 36352548.0,
+    "smallDollarCount": 1056921,
+    "smallDollarShare": 0.8652,
+    "avgContribution": 183.72,
+    "contributionsPerCapita": 0.2667,
+    "amountPerCapita": 49.0
+  },
+  "CT": {
+    "totalAmount": 217631430.0,
+    "totalCount": 725136,
+    "smallDollarAmount": 22736337.0,
+    "smallDollarCount": 615883,
+    "smallDollarShare": 0.8493,
+    "avgContribution": 300.12,
+    "contributionsPerCapita": 0.2534,
+    "amountPerCapita": 76.04
+  },
+  "DC": {
+    "totalAmount": 1673642668.0,
+    "totalCount": 567799,
+    "smallDollarAmount": 21370993.0,
+    "smallDollarCount": 387160,
+    "smallDollarShare": 0.6819,
+    "avgContribution": 2947.6,
+    "contributionsPerCapita": 0,
+    "amountPerCapita": 0
+  },
+  "DE": {
+    "totalAmount": 99631057.0,
+    "totalCount": 190665,
+    "smallDollarAmount": 5822406.0,
+    "smallDollarCount": 164677,
+    "smallDollarShare": 0.8637,
+    "avgContribution": 522.55,
+    "contributionsPerCapita": 0.241,
+    "amountPerCapita": 125.96
+  },
+  "FL": {
+    "totalAmount": 1272625385.0,
+    "totalCount": 3718760,
+    "smallDollarAmount": 104840139.0,
+    "smallDollarCount": 3280282,
+    "smallDollarShare": 0.8821,
+    "avgContribution": 342.22,
+    "contributionsPerCapita": 0.2077,
+    "amountPerCapita": 71.08
+  },
+  "GA": {
+    "totalAmount": 208665851.0,
+    "totalCount": 1363358,
+    "smallDollarAmount": 39525935.0,
+    "smallDollarCount": 1209409,
+    "smallDollarShare": 0.8871,
+    "avgContribution": 153.05,
+    "contributionsPerCapita": 0.1645,
+    "amountPerCapita": 25.18
+  },
+  "HI": {
+    "totalAmount": 38310237.0,
+    "totalCount": 245008,
+    "smallDollarAmount": 6835413.0,
+    "smallDollarCount": 219063,
+    "smallDollarShare": 0.8941,
+    "avgContribution": 156.36,
+    "contributionsPerCapita": 0.2172,
+    "amountPerCapita": 33.96
+  },
+  "IA": {
+    "totalAmount": 46891522.0,
+    "totalCount": 350542,
+    "smallDollarAmount": 10959314.0,
+    "smallDollarCount": 304013,
+    "smallDollarShare": 0.8673,
+    "avgContribution": 133.77,
+    "contributionsPerCapita": 0.1442,
+    "amountPerCapita": 19.29
+  },
+  "ID": {
+    "totalAmount": 36795693.0,
+    "totalCount": 304455,
+    "smallDollarAmount": 8812015.0,
+    "smallDollarCount": 275529,
+    "smallDollarShare": 0.905,
+    "avgContribution": 120.86,
+    "contributionsPerCapita": 0.2119,
+    "amountPerCapita": 25.61
+  },
+  "IL": {
+    "totalAmount": 744076255.0,
+    "totalCount": 1849993,
+    "smallDollarAmount": 56480784.0,
+    "smallDollarCount": 1592701,
+    "smallDollarShare": 0.8609,
+    "avgContribution": 402.2,
+    "contributionsPerCapita": 0.1886,
+    "amountPerCapita": 75.86
+  },
+  "IN": {
+    "totalAmount": 109985657.0,
+    "totalCount": 707808,
+    "smallDollarAmount": 21056974.0,
+    "smallDollarCount": 633538,
+    "smallDollarShare": 0.8951,
+    "avgContribution": 155.39,
+    "contributionsPerCapita": 0.1366,
+    "amountPerCapita": 21.23
+  },
+  "KS": {
+    "totalAmount": 100208466.0,
+    "totalCount": 398444,
+    "smallDollarAmount": 11358233.0,
+    "smallDollarCount": 352197,
+    "smallDollarShare": 0.8839,
+    "avgContribution": 251.5,
+    "contributionsPerCapita": 0.1774,
+    "amountPerCapita": 44.62
+  },
+  "KY": {
+    "totalAmount": 67841666.0,
+    "totalCount": 377393,
+    "smallDollarAmount": 11710806.0,
+    "smallDollarCount": 335500,
+    "smallDollarShare": 0.889,
+    "avgContribution": 179.76,
+    "contributionsPerCapita": 0.1064,
+    "amountPerCapita": 19.13
+  },
+  "LA": {
+    "totalAmount": 75417674.0,
+    "totalCount": 451019,
+    "smallDollarAmount": 12854993.0,
+    "smallDollarCount": 402537,
+    "smallDollarShare": 0.8925,
+    "avgContribution": 167.22,
+    "contributionsPerCapita": 0.126,
+    "amountPerCapita": 21.07
+  },
+  "MA": {
+    "totalAmount": 553291140.0,
+    "totalCount": 1543238,
+    "smallDollarAmount": 46712153.0,
+    "smallDollarCount": 1258911,
+    "smallDollarShare": 0.8158,
+    "avgContribution": 358.53,
+    "contributionsPerCapita": 0.2752,
+    "amountPerCapita": 98.68
+  },
+  "MD": {
+    "totalAmount": 273025843.0,
+    "totalCount": 1316519,
+    "smallDollarAmount": 38297461.0,
+    "smallDollarCount": 1087942,
+    "smallDollarShare": 0.8264,
+    "avgContribution": 207.38,
+    "contributionsPerCapita": 0.2765,
+    "amountPerCapita": 57.35
+  },
+  "ME": {
+    "totalAmount": 34843613.0,
+    "totalCount": 268379,
+    "smallDollarAmount": 7725243.0,
+    "smallDollarCount": 232385,
+    "smallDollarShare": 0.8659,
+    "avgContribution": 129.83,
+    "contributionsPerCapita": 0.2405,
+    "amountPerCapita": 31.22
+  },
+  "MI": {
+    "totalAmount": 242900989.0,
+    "totalCount": 1534192,
+    "smallDollarAmount": 45804877.0,
+    "smallDollarCount": 1351163,
+    "smallDollarShare": 0.8807,
+    "avgContribution": 158.33,
+    "contributionsPerCapita": 0.1942,
+    "amountPerCapita": 30.75
+  },
+  "MN": {
+    "totalAmount": 146819980.0,
+    "totalCount": 922723,
+    "smallDollarAmount": 27826892.0,
+    "smallDollarCount": 793343,
+    "smallDollarShare": 0.8598,
+    "avgContribution": 159.12,
+    "contributionsPerCapita": 0.2089,
+    "amountPerCapita": 33.25
+  },
+  "MO": {
+    "totalAmount": 116809828.0,
+    "totalCount": 861598,
+    "smallDollarAmount": 25673856.0,
+    "smallDollarCount": 775688,
+    "smallDollarShare": 0.9003,
+    "avgContribution": 135.57,
+    "contributionsPerCapita": 0.1794,
+    "amountPerCapita": 24.32
+  },
+  "MS": {
+    "totalAmount": 27826755.0,
+    "totalCount": 223585,
+    "smallDollarAmount": 6540354.0,
+    "smallDollarCount": 200433,
+    "smallDollarShare": 0.8965,
+    "avgContribution": 124.46,
+    "contributionsPerCapita": 0.0982,
+    "amountPerCapita": 12.22
+  },
+  "MT": {
+    "totalAmount": 50792850.0,
+    "totalCount": 300745,
+    "smallDollarAmount": 8884479.0,
+    "smallDollarCount": 260664,
+    "smallDollarShare": 0.8667,
+    "avgContribution": 168.89,
+    "contributionsPerCapita": 0.3457,
+    "amountPerCapita": 58.38
+  },
+  "NC": {
+    "totalAmount": 239268422.0,
+    "totalCount": 1329125,
+    "smallDollarAmount": 38996462.0,
+    "smallDollarCount": 1166675,
+    "smallDollarShare": 0.8778,
+    "avgContribution": 180.02,
+    "contributionsPerCapita": 0.1603,
+    "amountPerCapita": 28.87
+  },
+  "ND": {
+    "totalAmount": 23719594.0,
+    "totalCount": 85363,
+    "smallDollarAmount": 2492137.0,
+    "smallDollarCount": 71407,
+    "smallDollarShare": 0.8365,
+    "avgContribution": 277.87,
+    "contributionsPerCapita": 0.1457,
+    "amountPerCapita": 40.48
+  },
+  "NE": {
+    "totalAmount": 62919838.0,
+    "totalCount": 236298,
+    "smallDollarAmount": 7647801.0,
+    "smallDollarCount": 205028,
+    "smallDollarShare": 0.8677,
+    "avgContribution": 266.27,
+    "contributionsPerCapita": 0.1584,
+    "amountPerCapita": 42.17
+  },
+  "NH": {
+    "totalAmount": 52655012.0,
+    "totalCount": 301591,
+    "smallDollarAmount": 8725006.0,
+    "smallDollarCount": 262005,
+    "smallDollarShare": 0.8687,
+    "avgContribution": 174.59,
+    "contributionsPerCapita": 0.2715,
+    "amountPerCapita": 47.39
+  },
+  "NJ": {
+    "totalAmount": 241187655.0,
+    "totalCount": 1479167,
+    "smallDollarAmount": 46180277.0,
+    "smallDollarCount": 1291008,
+    "smallDollarShare": 0.8728,
+    "avgContribution": 163.06,
+    "contributionsPerCapita": 0.2069,
+    "amountPerCapita": 33.74
+  },
+  "NM": {
+    "totalAmount": 62114096.0,
+    "totalCount": 501199,
+    "smallDollarAmount": 13915544.0,
+    "smallDollarCount": 439648,
+    "smallDollarShare": 0.8772,
+    "avgContribution": 123.93,
+    "contributionsPerCapita": 0.3065,
+    "amountPerCapita": 37.99
+  },
+  "NV": {
+    "totalAmount": 353713980.0,
+    "totalCount": 545039,
+    "smallDollarAmount": 15628767.0,
+    "smallDollarCount": 482754,
+    "smallDollarShare": 0.8857,
+    "avgContribution": 648.97,
+    "contributionsPerCapita": 0.2263,
+    "amountPerCapita": 146.89
+  },
+  "NY": {
+    "totalAmount": 1291408374.0,
+    "totalCount": 3368006,
+    "smallDollarAmount": 95625765.0,
+    "smallDollarCount": 2801487,
+    "smallDollarShare": 0.8318,
+    "avgContribution": 383.43,
+    "contributionsPerCapita": 0.2142,
+    "amountPerCapita": 82.15
+  },
+  "OH": {
+    "totalAmount": 279311131.0,
+    "totalCount": 1595313,
+    "smallDollarAmount": 47458135.0,
+    "smallDollarCount": 1409098,
+    "smallDollarShare": 0.8833,
+    "avgContribution": 175.08,
+    "contributionsPerCapita": 0.1737,
+    "amountPerCapita": 30.42
+  },
+  "OK": {
+    "totalAmount": 73769306.0,
+    "totalCount": 487670,
+    "smallDollarAmount": 13697426.0,
+    "smallDollarCount": 444831,
+    "smallDollarShare": 0.9122,
+    "avgContribution": 151.27,
+    "contributionsPerCapita": 0.1612,
+    "amountPerCapita": 24.39
+  },
+  "OR": {
+    "totalAmount": 112370897.0,
+    "totalCount": 1010938,
+    "smallDollarAmount": 29290424.0,
+    "smallDollarCount": 890272,
+    "smallDollarShare": 0.8806,
+    "avgContribution": 111.16,
+    "contributionsPerCapita": 0.3052,
+    "amountPerCapita": 33.93
+  },
+  "PA": {
+    "totalAmount": 404595744.0,
+    "totalCount": 2044875,
+    "smallDollarAmount": 67517721.0,
+    "smallDollarCount": 1797814,
+    "smallDollarShare": 0.8792,
+    "avgContribution": 197.86,
+    "contributionsPerCapita": 0.1987,
+    "amountPerCapita": 39.31
+  },
+  "RI": {
+    "totalAmount": 26418543.0,
+    "totalCount": 157646,
+    "smallDollarAmount": 5048774.0,
+    "smallDollarCount": 128638,
+    "smallDollarShare": 0.816,
+    "avgContribution": 167.58,
+    "contributionsPerCapita": 0.18,
+    "amountPerCapita": 30.16
+  },
+  "SC": {
+    "totalAmount": 90531316.0,
+    "totalCount": 656536,
+    "smallDollarAmount": 18543660.0,
+    "smallDollarCount": 588289,
+    "smallDollarShare": 0.896,
+    "avgContribution": 137.89,
+    "contributionsPerCapita": 0.1579,
+    "amountPerCapita": 21.77
+  },
+  "SD": {
+    "totalAmount": 24811591.0,
+    "totalCount": 123383,
+    "smallDollarAmount": 3512570.0,
+    "smallDollarCount": 108730,
+    "smallDollarShare": 0.8812,
+    "avgContribution": 201.09,
+    "contributionsPerCapita": 0.1817,
+    "amountPerCapita": 36.54
+  },
+  "TN": {
+    "totalAmount": 149988017.0,
+    "totalCount": 849093,
+    "smallDollarAmount": 25833154.0,
+    "smallDollarCount": 745765,
+    "smallDollarShare": 0.8783,
+    "avgContribution": 176.64,
+    "contributionsPerCapita": 0.1549,
+    "amountPerCapita": 27.37
+  },
+  "TX": {
+    "totalAmount": 1209430740.0,
+    "totalCount": 4538426,
+    "smallDollarAmount": 135128609.0,
+    "smallDollarCount": 4018406,
+    "smallDollarShare": 0.8854,
+    "avgContribution": 266.49,
+    "contributionsPerCapita": 0.2065,
+    "amountPerCapita": 55.04
+  },
+  "UT": {
+    "totalAmount": 64572755.0,
+    "totalCount": 383549,
+    "smallDollarAmount": 10231129.0,
+    "smallDollarCount": 338500,
+    "smallDollarShare": 0.8825,
+    "avgContribution": 168.36,
+    "contributionsPerCapita": 0.1671,
+    "amountPerCapita": 28.12
+  },
+  "VA": {
+    "totalAmount": 596171204.0,
+    "totalCount": 1864180,
+    "smallDollarAmount": 60310728.0,
+    "smallDollarCount": 1576489,
+    "smallDollarShare": 0.8457,
+    "avgContribution": 319.8,
+    "contributionsPerCapita": 0.2778,
+    "amountPerCapita": 88.83
+  },
+  "VT": {
+    "totalAmount": 23026394.0,
+    "totalCount": 146403,
+    "smallDollarAmount": 4693855.0,
+    "smallDollarCount": 124485,
+    "smallDollarShare": 0.8503,
+    "avgContribution": 157.28,
+    "contributionsPerCapita": 0.2794,
+    "amountPerCapita": 43.94
+  },
+  "WA": {
+    "totalAmount": 348298330.0,
+    "totalCount": 1995083,
+    "smallDollarAmount": 56901173.0,
+    "smallDollarCount": 1724264,
+    "smallDollarShare": 0.8643,
+    "avgContribution": 174.58,
+    "contributionsPerCapita": 0.3292,
+    "amountPerCapita": 57.47
+  },
+  "WI": {
+    "totalAmount": 174741136.0,
+    "totalCount": 879088,
+    "smallDollarAmount": 28045363.0,
+    "smallDollarCount": 766033,
+    "smallDollarShare": 0.8714,
+    "avgContribution": 198.78,
+    "contributionsPerCapita": 0.1923,
+    "amountPerCapita": 38.23
+  },
+  "WV": {
+    "totalAmount": 20451341.0,
+    "totalCount": 141236,
+    "smallDollarAmount": 4275622.0,
+    "smallDollarCount": 125215,
+    "smallDollarShare": 0.8866,
+    "avgContribution": 144.8,
+    "contributionsPerCapita": 0.0995,
+    "amountPerCapita": 14.41
+  },
+  "WY": {
+    "totalAmount": 249226793.0,
+    "totalCount": 123824,
+    "smallDollarAmount": 3410735.0,
+    "smallDollarCount": 107958,
+    "smallDollarShare": 0.8719,
+    "avgContribution": 2012.75,
+    "contributionsPerCapita": 0.2758,
+    "amountPerCapita": 555.07
+  }
+}

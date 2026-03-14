@@ -1,0 +1,94 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+:root {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #111827;
+  --bg-panel: #1a2235;
+  --bg-hover: #243049;
+  --border: #2a3a55;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+  --accent-blue: #3b82f6;
+  --accent-cyan: #06b6d4;
+  --accent-green: #10b981;
+  --accent-orange: #f59e0b;
+  --accent-red: #ef4444;
+  --accent-purple: #8b5cf6;
+  --anomaly-high: #ef4444;
+  --anomaly-low: #3b82f6;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+body {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'SF Mono', 'Fira Code', 'JetBrains Mono', monospace;
+}
+
+/* Leaflet overrides for dark theme */
+.leaflet-container {
+  background: #0a0e17 !important;
+}
+
+.leaflet-control-zoom a {
+  background: var(--bg-panel) !important;
+  color: var(--text-primary) !important;
+  border-color: var(--border) !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(10, 14, 23, 0.8) !important;
+  color: var(--text-muted) !important;
+  font-size: 9px !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: var(--bg-panel) !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 4px !important;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5) !important;
+}
+
+.leaflet-popup-tip {
+  background: var(--bg-panel) !important;
+}
+
+/* Custom scrollbar for webkit */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+/* Anomaly pulse animation */
+@keyframes anomaly-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.5; }
+}
+
+.anomaly-indicator {
+  animation: anomaly-pulse 2s ease-in-out infinite;
+}
+
+/* Grid lines for Palantir feel */
+.grid-overlay {
+  background-image:
+    linear-gradient(rgba(42, 58, 85, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(42, 58, 85, 0.1) 1px, transparent 1px);
+  background-size: 20px 20px;
+}

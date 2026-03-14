@@ -1,0 +1,458 @@
+{
+  "IL-16": {
+    "race_label": "Illinois 16th Congressional District",
+    "candidates": {
+      "H6IL18088": {
+        "name": "Darin LaHood",
+        "party": "REP",
+        "website": "https://lahoodforcongress.com",
+        "issues": [
+          { "topic": "Economy", "position": "Lower taxes, private-sector job creation" },
+          { "topic": "Federal Spending", "position": "Fiscal restraint to address national debt" },
+          { "topic": "Agriculture", "position": "Reduce farm regulations, expand trade access" },
+          { "topic": "China/Trade", "position": "Confront CCP on IP theft and unfair subsidies" },
+          { "topic": "National Security", "position": "Strong defense; former terrorism prosecutor" },
+          { "topic": "Healthcare", "position": "Individual choice over government mandates" },
+          { "topic": "Immigration", "position": "Support legal immigration, enforce rule of law" },
+          { "topic": "2nd Amendment", "position": "Strongly supports gun rights" },
+          { "topic": "Abortion", "position": "100% pro-life stance" },
+          { "topic": "Veterans", "position": "Full veteran care and support" }
+        ]
+      },
+      "H6IL16108": {
+        "name": "Paul Nolley",
+        "party": "DEM",
+        "website": "https://www.nolleyforcongress.com",
+        "issues": [
+          { "topic": "Social Security", "position": "Strengthen SS/Medicare; protect from cuts" },
+          { "topic": "Anti-Corruption", "position": "End pay-to-play politics and corporate PACs" },
+          { "topic": "Agriculture", "position": "Preserve family farming operations" },
+          { "topic": "Workers' Rights", "position": "Strengthen labor protections and unions" },
+          { "topic": "Manufacturing", "position": "Revive blue-collar careers" },
+          { "topic": "Environment", "position": "Protect IL air, water, land, and wildlife" },
+          { "topic": "Women's Rights", "position": "Stand up for women's rights" },
+          { "topic": "Veterans", "position": "Fully fund and rebuild VA healthcare" }
+        ]
+      }
+    },
+    "common_issues": ["Agriculture", "Veterans", "Manufacturing", "Healthcare", "Economy", "Trade/Tariffs"],
+    "key_divides": [
+      { "topic": "Trade/Tariffs", "summary": "LaHood supports strategic tariffs targeting 'bad actors' while expanding corn/soybean export markets; Nolley opposes Trump tariffs entirely" },
+      { "topic": "Abortion", "summary": "LaHood is 100% pro-life; Nolley champions reproductive access" },
+      { "topic": "Labor/Unions", "summary": "Nolley centers on strengthening unions with multiple endorsements; LaHood focuses on business climate and deregulation" },
+      { "topic": "Spending vs. Safety Net", "summary": "LaHood prioritizes fiscal restraint and debt reduction; Nolley wants to expand Social Security and Medicare" },
+      { "topic": "Political Style", "summary": "Nolley claims LaHood shifted from moderate to 'full MAGA'; LaHood touts bipartisan Affordable Housing Tax Credit Law" }
+    ]
+  },
+  "IL-17": {
+    "race_label": "Illinois 17th Congressional District",
+    "candidates": {
+      "H2IL17147": {
+        "name": "Eric Sorensen",
+        "party": "DEM",
+        "website": "https://www.ericforillinois.com",
+        "issues": [
+          { "topic": "Jobs/Economy", "position": "Create jobs, lower costs to retain IL residents" },
+          { "topic": "Reproductive Rights", "position": "Codify Roe v. Wade" },
+          { "topic": "Public Safety", "position": "Support law enforcement with strained budgets" },
+          { "topic": "Infrastructure", "position": "Invest in Central/NW IL infrastructure" },
+          { "topic": "Social Security", "position": "Oppose privatization or cuts" },
+          { "topic": "Healthcare", "position": "Affordable access regardless of income" },
+          { "topic": "Veterans", "position": "Grants for disabled vet home accessibility" }
+        ]
+      },
+      "H6IL17262": {
+        "name": "Julie Bickelhaupt",
+        "party": "REP",
+        "website": null,
+        "issues": [
+          { "topic": "Cost of Living", "position": "Cut taxes and reduce energy/food regulations" },
+          { "topic": "Agriculture", "position": "Protect farming; open markets, predictable rules" },
+          { "topic": "Education", "position": "Expand school choice, empower parents" },
+          { "topic": "Healthcare", "position": "Increase competition, require price transparency" },
+          { "topic": "Immigration", "position": "Align IL with federal enforcement" },
+          { "topic": "Social Security", "position": "Oppose cuts for current retirees" }
+        ]
+      },
+      "H6IL17247": {
+        "name": "Dillan Vancil",
+        "party": "REP",
+        "website": "https://www.vancilforcongress.com",
+        "issues": [
+          { "topic": "Energy", "position": "Expand coal, natural gas, nuclear for affordable power" },
+          { "topic": "Cost of Living", "position": "Real tax relief for families" },
+          { "topic": "Healthcare", "position": "Price transparency; crack down on middlemen" },
+          { "topic": "Immigration", "position": "Full law enforcement; support Laken Riley Act" },
+          { "topic": "Small Business", "position": "Lower taxes and reduce red tape" },
+          { "topic": "Fiscal Responsibility", "position": "Government must live within its means" }
+        ]
+      }
+    },
+    "common_issues": ["Cost of Living", "Healthcare", "Social Security", "Agriculture", "Energy", "Immigration"],
+    "key_divides": [
+      { "topic": "Farm Bill", "summary": "Sorensen voted NO on 2026 Farm Bill citing harm to farmers; Vancil wants to break up fertilizer monopolies for fair pricing" },
+      { "topic": "Energy Policy", "summary": "Vancil pushes coal/gas/nuclear expansion; Sorensen supports wind, solar, nuclear including salt reactor tech and data center self-generation" },
+      { "topic": "Tariffs", "summary": "Both Republicans support Trump tariffs as negotiation tools; Sorensen cites retaliatory tariffs worsening farm affordability" },
+      { "topic": "Gun Policy", "summary": "Vancil supports background checks for all commercial gun sales (moderate for GOP); Sorensen supports broader gun reform" },
+      { "topic": "Immigration", "summary": "Bickelhaupt wants federal funding leverage to force police/ICE cooperation; Sorensen does not feature immigration as priority" }
+    ]
+  },
+  "IL-13": {
+    "race_label": "Illinois 13th Congressional District",
+    "candidates": {
+      "H2IL13153": {
+        "name": "Nikki Budzinski",
+        "party": "DEM",
+        "website": "https://nikkiforcongress.com",
+        "issues": [
+          { "topic": "Workers/Labor", "position": "Lifetime labor advocate; protect unions" },
+          { "topic": "Cost of Living", "position": "Combat rising costs for middle-class families" },
+          { "topic": "Jobs", "position": "Build 21st century economy for upward mobility" },
+          { "topic": "Agriculture", "position": "Support IL agriculture and rural communities" },
+          { "topic": "Veterans", "position": "Advocate for veteran benefits and services" },
+          { "topic": "Social Security", "position": "Protect from cuts or privatization" },
+          { "topic": "Reproductive Rights", "position": "Defend abortion access" },
+          { "topic": "Healthcare", "position": "Improve affordability and access" }
+        ]
+      },
+      "H6IL13162": {
+        "name": "Dylan Blaha",
+        "party": "DEM",
+        "website": "https://www.dylanforillinois.com",
+        "issues": [
+          { "topic": "Anti-Oligarchy", "position": "Overturn Citizens United; remove billionaire influence" },
+          { "topic": "Healthcare", "position": "Medicare for All as a right" },
+          { "topic": "Housing", "position": "Treat housing as a human right" },
+          { "topic": "Environment", "position": "Aggressive climate action; Green New Deal" },
+          { "topic": "Gun Reform", "position": "Evidence-based policies balancing safety and freedoms" },
+          { "topic": "AI Regulation", "position": "Government oversight of AI" },
+          { "topic": "Foreign Policy", "position": "Call for Gaza ceasefire" }
+        ]
+      },
+      "H4IL13241": {
+        "name": "Joshua Loyd",
+        "party": "REP",
+        "website": "https://www.loydforcongress.com",
+        "issues": [
+          { "topic": "Immigration", "position": "100% deportation; end sanctuary cities" },
+          { "topic": "Agriculture", "position": "Reduce burden on farmers; expand resources" },
+          { "topic": "Energy", "position": "Support all types: nuclear, solar, coal, gas" },
+          { "topic": "Economy", "position": "Affordability through cost-effective energy" },
+          { "topic": "Social Security", "position": "Protect without privatization" },
+          { "topic": "2nd Amendment", "position": "Strong gun rights supporter" }
+        ]
+      },
+      "H6IL13154": {
+        "name": "Jeff Wilson",
+        "party": "REP",
+        "website": "https://www.wilsonforcongress.com",
+        "issues": [
+          { "topic": "Economy", "position": "Lower taxes, deregulate, increase energy production" },
+          { "topic": "Energy", "position": "Expand cleaner fossil fuels to lower utility bills" },
+          { "topic": "Immigration", "position": "Strong ICE enforcement and border policies" },
+          { "topic": "Healthcare", "position": "Market-based: more competition, cost caps" },
+          { "topic": "Abortion", "position": "Pro-life" },
+          { "topic": "2nd Amendment", "position": "Pro-gun constitutional federalist" },
+          { "topic": "Agriculture", "position": "Strengthen farms and supply chains" }
+        ]
+      }
+    },
+    "common_issues": ["Cost of Living", "Agriculture", "Healthcare", "Social Security", "Energy", "Immigration", "Veterans"],
+    "key_divides": [
+      { "topic": "DEM Primary: Left vs. Center", "summary": "DSA member Blaha wants to abolish ICE, cut defense $100B, Medicare for All; Budzinski voted for Laken Riley Act, runs as pragmatic centrist" },
+      { "topic": "Immigration", "summary": "Loyd calls for 100% deportation; Wilson supports ICE enforcement; Blaha wants to abolish ICE; Budzinski voted for Laken Riley Act" },
+      { "topic": "Healthcare Model", "summary": "Blaha supports Medicare for All; Budzinski supports incremental expansion; Republicans want market-based reforms with cost caps" },
+      { "topic": "Fundraising Gap", "summary": "Budzinski has $2.55M cash on hand vs. Blaha's $6.8K; Tribune endorsed Budzinski (D) and Loyd (R)" },
+      { "topic": "Climate/Energy", "summary": "Blaha supports Green New Deal; both Republicans favor expanded fossil fuel and nuclear production" }
+    ]
+  },
+  "IL-8": {
+    "race_label": "Illinois 8th Congressional District",
+    "candidates": {
+      "H2IL08146": {
+        "name": "Junaid Ahmed",
+        "party": "DEM",
+        "website": "https://junaidforus.com",
+        "issues": [
+          { "topic": "Healthcare", "position": "Medicare for All; healthcare is a human right" },
+          { "topic": "Climate", "position": "Supports Green New Deal" },
+          { "topic": "Education", "position": "Tuition-free public college" },
+          { "topic": "Gaza/Palestine", "position": "Supports Palestinian self-determination" },
+          { "topic": "Immigration", "position": "Abolish ICE; stand up to Trump" },
+          { "topic": "Campaign Finance", "position": "No corporate or special interest donations" }
+        ]
+      },
+      "H6IL08253": {
+        "name": "Yasmeen Bankole",
+        "party": "DEM",
+        "website": "https://yasmeenbankole.com",
+        "issues": [
+          { "topic": "Affordability", "position": "Strengthen SS/Medicare, cut working family taxes" },
+          { "topic": "Healthcare", "position": "Sponsor Medicare for All Act" },
+          { "topic": "Immigration", "position": "Pathway to citizenship; protect birthright citizenship" },
+          { "topic": "Crypto/Digital Assets", "position": "Federal regulatory framework for crypto" },
+          { "topic": "Reproductive Rights", "position": "Fight national abortion bans" },
+          { "topic": "Workers/Labor", "position": "PRO Act; raise minimum wage to $17/hr" }
+        ]
+      },
+      "H6IL08329": {
+        "name": "Melissa Bean",
+        "party": "DEM",
+        "website": "https://www.melissabeanforcongress.com",
+        "issues": [
+          { "topic": "Healthcare", "position": "Restore ACA tax credits; Medicare drug negotiation" },
+          { "topic": "Small Business", "position": "Restore SBA funding; support entrepreneurship" },
+          { "topic": "AI Policy", "position": "Develop responsible AI oversight framework" },
+          { "topic": "Reproductive Rights", "position": "Protect women's healthcare autonomy" },
+          { "topic": "Housing", "position": "Expand home inventory for young families" },
+          { "topic": "Tariffs/Trade", "position": "Stop nonstrategic tariffs taxing consumers" }
+        ]
+      },
+      "H6IL08311": {
+        "name": "Jennifer Davis",
+        "party": "REP",
+        "website": "https://www.votejenniferdavis.com",
+        "issues": [
+          { "topic": "Affordability", "position": "Cut federal taxes on working families" },
+          { "topic": "Small Business", "position": "Reduce regulations on entrepreneurs" },
+          { "topic": "Immigration", "position": "Secure border; support legal immigration" },
+          { "topic": "China/Trade", "position": "Supports firm stance on China and Taiwan" },
+          { "topic": "Parental Rights", "position": "Protect parental rights in education" },
+          { "topic": "Fiscal Responsibility", "position": "Slash red tape and corruption" }
+        ]
+      },
+      "H6IL08246": {
+        "name": "Sanjyot Dunung",
+        "party": "DEM",
+        "website": "https://www.sanjyotforcongress.com",
+        "issues": [
+          { "topic": "Democracy", "position": "Campaign finance reform; SCOTUS term limits" },
+          { "topic": "Economy", "position": "Invest in education, infrastructure, small business" },
+          { "topic": "Social Safety Net", "position": "Defend Medicare, Medicaid, SS, veterans programs" },
+          { "topic": "Immigration", "position": "Faster pathways to citizenship" },
+          { "topic": "Childcare", "position": "Address affordability crisis for families" }
+        ]
+      },
+      "H6IL08212": {
+        "name": "Neil Khot",
+        "party": "DEM",
+        "website": "https://neilforcongress.com",
+        "issues": [
+          { "topic": "Women's Rights", "position": "Defend reproductive healthcare; close wage gap" },
+          { "topic": "Social Security", "position": "Strengthen SS and Medicare; prevent cuts" },
+          { "topic": "Immigration", "position": "More legal pathways; deport violent felons" },
+          { "topic": "Affordability", "position": "Lower costs; oppose tariffs driving up prices" },
+          { "topic": "Healthcare", "position": "Lift medical residency cap; protect ACA" },
+          { "topic": "Environment", "position": "Net-zero carbon; invest in clean energy" },
+          { "topic": "Gun Violence", "position": "Universal background checks and gun safety" }
+        ]
+      },
+      "H6IL08238": {
+        "name": "Kevin Morrison",
+        "party": "DEM",
+        "website": "https://www.kevinmorrisonforcongress.com",
+        "issues": [
+          { "topic": "Cost of Living", "position": "Fight corporate price gouging" },
+          { "topic": "Rights/Freedoms", "position": "Protect LGBTQ+, voting, reproductive freedom" },
+          { "topic": "Democracy", "position": "Combat corruption and corporate influence" }
+        ]
+      },
+      "H4IL08159": {
+        "name": "Mark Rice",
+        "party": "REP",
+        "website": "https://rice4congress.com",
+        "issues": [
+          { "topic": "Economy", "position": "Restore middle class through free markets" },
+          { "topic": "Government Spending", "position": "Crack down on waste and corruption" },
+          { "topic": "Immigration", "position": "Enforce laws; oppose sanctuary policies" },
+          { "topic": "2nd Amendment", "position": "Defend gun rights" },
+          { "topic": "Election Integrity", "position": "Restore faith in elections" }
+        ]
+      },
+      "H6IL08287": {
+        "name": "Dan Tully",
+        "party": "DEM",
+        "website": "https://dantully.com",
+        "issues": [
+          { "topic": "Democracy Defense", "position": "Protect institutions from authoritarianism" },
+          { "topic": "Campaign Finance", "position": "Ban congressional stock trading" },
+          { "topic": "National Security", "position": "Counter China and Russia; support allies" },
+          { "topic": "Healthcare", "position": "Protect SS, Medicare, retirement benefits" }
+        ]
+      },
+      "H6IL08295": {
+        "name": "Ryan Vetticad",
+        "party": "DEM",
+        "website": "https://www.ryanforillinois.com",
+        "issues": [
+          { "topic": "Healthcare", "position": "Medicare for All with private insurance option" },
+          { "topic": "Tariffs/Trade", "position": "Reverse Trump tariffs raising consumer prices" },
+          { "topic": "Campaign Finance", "position": "Ban congressional stock trading" },
+          { "topic": "Social Security", "position": "Expand SS and protect Medicaid" },
+          { "topic": "Gun Safety", "position": "Assault weapons ban, universal background checks" },
+          { "topic": "Immigration", "position": "More pathways to citizenship" }
+        ]
+      }
+    },
+    "common_issues": ["Healthcare", "Affordability", "Social Security", "Immigration", "Democracy/Reform", "Reproductive Rights"],
+    "key_divides": [
+      { "topic": "Healthcare", "summary": "Medicare for All: Ahmed, Bankole, Tully, Vetticad. ACA strengthening: Bean, Morrison, Dunung, Khot" },
+      { "topic": "Immigration", "summary": "Abolish ICE: Ahmed, Bankole, Vetticad. Reform with accountability: Khot (bodycams, facility visits). Comprehensive reform: Bean, Morrison" },
+      { "topic": "Establishment vs. Outsider", "summary": "Bean (former congresswoman, JPMorgan career, Tribune + Daily Herald endorsed) attacked as 'Wall Street Democrat'; Ahmed (Sanders/Warren endorsed, no PAC money)" },
+      { "topic": "Israel Policy", "summary": "Ahmed supports eliminating U.S. military aid to Israel; Bankole/Khot call for accountability; Bean does not take explicit position" },
+      { "topic": "Generational Divide", "summary": "Bean returning from 2005-2011 era; Vetticad (24, youngest), Morrison (36, 'American Dream out of reach'), Bankole (32, Durbin endorsed)" }
+    ]
+  },
+  "IL-9": {
+    "race_label": "Illinois 9th Congressional District",
+    "race_summary": "Open seat created by Jan Schakowsky's retirement after 26 years. Top 3 by fundraising/polling: Biss, Abughazaleh, Fine. Biss leads polls at ~24% with Schakowsky's endorsement. Key cleavage: establishment experience vs. progressive outsider energy. Israel/Palestine is the most heated issue.",
+    "candidates": {
+      "H6IL09228": {
+        "name": "Daniel Biss",
+        "party": "DEM",
+        "website": "https://www.danielbiss.com",
+        "issues": [
+          { "topic": "Economy", "position": "Structural reform for working and middle class" },
+          { "topic": "Labor", "position": "Strengthen worker organizing rights and unions" },
+          { "topic": "Climate", "position": "Bold action to address the climate crisis" },
+          { "topic": "Government Reform", "position": "Clean up corruption, restore trust" },
+          { "topic": "Cost of Living", "position": "Lower cost of housing, healthcare, essentials" },
+          { "topic": "Executive Power", "position": "Rein in Trump admin; limit executive overreach" },
+          { "topic": "Immigration", "position": "Welcoming immigration policy and reform" },
+          { "topic": "Gun Violence", "position": "Common sense gun reform" },
+          { "topic": "Social Security", "position": "Protect SS, Medicare, retirement programs" }
+        ]
+      },
+      "H6IL09178": {
+        "name": "Kat Abughazaleh",
+        "party": "DEM",
+        "website": "https://katforillinois.com",
+        "issues": [
+          { "topic": "Anti-Authoritarianism", "position": "Fight fascism loudly and proudly" },
+          { "topic": "Affordability", "position": "Affordable housing, groceries, healthcare" },
+          { "topic": "Climate", "position": "Immediate action on climate disasters" },
+          { "topic": "Palestine", "position": "Support Palestinian self-determination" },
+          { "topic": "Healthcare", "position": "Universal single-payer healthcare" },
+          { "topic": "Housing", "position": "Address housing crisis crushing middle class" },
+          { "topic": "Reproductive Rights", "position": "Abortion access as essential healthcare" },
+          { "topic": "Gun Violence", "position": "Eliminate fear of gun violence" },
+          { "topic": "LGBTQ+ Rights", "position": "Defend LGBTQ+ community rights" },
+          { "topic": "Campaign Finance", "position": "Rejects corporate donations" }
+        ]
+      },
+      "H6IL09194": {
+        "name": "Laura Fine",
+        "party": "DEM",
+        "website": "https://www.laurafineforcongress.org",
+        "issues": [
+          { "topic": "Healthcare", "position": "Take on insurance giants; support Medicare for All" },
+          { "topic": "Social Security", "position": "Protect benefits, expand coverage" },
+          { "topic": "Consumer Protection", "position": "Regulate data privacy, social media" },
+          { "topic": "Education", "position": "Fund public schools, free community college" },
+          { "topic": "Workers/Unions", "position": "Support organizing rights, raise wages" },
+          { "topic": "Reproductive Rights", "position": "Protect reproductive healthcare access" },
+          { "topic": "Gun Violence", "position": "Gun violence prevention measures" },
+          { "topic": "AI/Innovation", "position": "Invest in AI and clean energy" }
+        ]
+      },
+      "H6IL09293": {
+        "name": "Mike Simmons",
+        "party": "DEM",
+        "website": "https://www.mikesimmons.org",
+        "issues": [
+          { "topic": "Gaza", "position": "End the genocide in Gaza" },
+          { "topic": "Healthcare", "position": "Implement Medicare for All" },
+          { "topic": "Immigration", "position": "Protect immigrants; abolish ICE" },
+          { "topic": "LGBTQ+ Rights", "position": "Fight for LGBTQIA+ rights and protections" },
+          { "topic": "Housing", "position": "Fund housing for all Americans" },
+          { "topic": "Education", "position": "Fund public education, ban book censorship" },
+          { "topic": "Gun Violence", "position": "Remove guns from streets" },
+          { "topic": "AI/Data", "position": "Protect citizens from AI threats" }
+        ]
+      },
+      "H6IL09376": {
+        "name": "Jeff Cohen",
+        "party": "DEM",
+        "website": "https://www.jeffcohenforcongress.com",
+        "issues": [
+          { "topic": "Economy", "position": "Close gap between income and expenses" },
+          { "topic": "Gun Safety", "position": "Federal assault weapons ban" },
+          { "topic": "Reproductive Rights", "position": "Restore Roe v. Wade" },
+          { "topic": "Climate", "position": "Clean tech investment; protect Lake Michigan" },
+          { "topic": "AI", "position": "Committee oversight for AI security" },
+          { "topic": "Government Reform", "position": "Six-term House limits; expand House seats" }
+        ]
+      },
+      "H6IL09251": {
+        "name": "Howard Rosenblum",
+        "party": "DEM",
+        "website": "https://www.howardrosenblum.com",
+        "issues": [
+          { "topic": "Economy", "position": "Center human dignity; expand opportunity" },
+          { "topic": "Housing", "position": "Expand affordable units; fight corporate landlords" },
+          { "topic": "Healthcare", "position": "Expand Medicaid; negotiate drug prices" },
+          { "topic": "Education", "position": "Fully fund public schools" },
+          { "topic": "Environment", "position": "Transition to clean energy" },
+          { "topic": "Immigration", "position": "End for-profit detention; fair citizenship path" }
+        ]
+      },
+      "H6IL09236": {
+        "name": "Bushra Amiwala",
+        "party": "DEM",
+        "website": "https://www.bushraforcongress.com",
+        "issues": [
+          { "topic": "Healthcare", "position": "Medicare for All with mental health parity" },
+          { "topic": "Immigration", "position": "Pathway to citizenship; abolish ICE" },
+          { "topic": "Education", "position": "Free public college; cancel student debt" },
+          { "topic": "Climate", "position": "Green New Deal; protect Great Lakes" },
+          { "topic": "Gun Violence", "position": "Ban assault weapons" },
+          { "topic": "Criminal Justice", "position": "End mass incarceration" }
+        ]
+      },
+      "H6IL09319": {
+        "name": "Nick Pyati",
+        "party": "DEM",
+        "website": "https://www.nickpyati.com",
+        "issues": [
+          { "topic": "Affordability", "position": "End affordability crisis for families" },
+          { "topic": "AI/Innovation", "position": "Balanced AI oversight; support beneficial tech" },
+          { "topic": "Democracy", "position": "Protect rule of law; insulate institutions" },
+          { "topic": "Energy", "position": "Clean energy transition through innovation" },
+          { "topic": "Education", "position": "AI literacy and career reskilling" }
+        ]
+      },
+      "H6IL09327": {
+        "name": "Justin Ford",
+        "party": "DEM",
+        "website": "https://votejustinford.com",
+        "issues": [
+          { "topic": "Four-Day Work Week", "position": "32-hour full-time work week" },
+          { "topic": "Labor", "position": "Rebuild labor movement; union support" },
+          { "topic": "Housing", "position": "Fight for affordable housing" },
+          { "topic": "Healthcare", "position": "Support universal healthcare" },
+          { "topic": "Climate", "position": "Real climate action" }
+        ]
+      },
+      "H6IL09210": {
+        "name": "Dongbo Su",
+        "party": "REP",
+        "website": "https://site.marksuforcongress.com",
+        "issues": [
+          { "topic": "Economy", "position": "Build strong economy, reduce spending" },
+          { "topic": "Crime/Safety", "position": "Reduce crime and increase public safety" },
+          { "topic": "Immigration", "position": "Support legal immigration pathways" },
+          { "topic": "Healthcare", "position": "Reform medical care system" }
+        ]
+      }
+    },
+    "common_issues": ["Healthcare", "Gun Violence", "Housing", "Israel/Palestine", "Immigration", "Climate", "AIPAC/Campaign Finance", "Social Security"],
+    "key_divides": [
+      { "topic": "Israel/Palestine & AIPAC", "summary": "Fine backed by AIPAC-aligned donors (~$1M last quarter); Abughazaleh opposes Iron Dome, endorsed by Justice Democrats; Biss endorsed by J Street, called Netanyahu 'reckless'. Over $5.1M in independent expenditures flooded the race" },
+      { "topic": "Polling (Mar 10)", "summary": "Biss 24%, Abughazaleh 20% (up 3), Fine 14% (down 2). Fine separating from top two as race tightens to Biss vs. Abughazaleh" },
+      { "topic": "Establishment vs. Outsider", "summary": "Fine endorsed by Tribune ('measured, principled'), Biss endorsed by Schakowsky/Warren. Abughazaleh refused Tribune interview, faces federal felony charges from ICE protest" },
+      { "topic": "ICE/Immigration", "summary": "Biss confronted ICE agents in Evanston (not indicted); Abughazaleh facing federal charges from Broadview ICE protest; Simmons/Amiwala want to abolish ICE" },
+      { "topic": "Campaign Finance", "summary": "'Elect Chicago Women' super PAC spent $500K+ for Fine; Abughazaleh: 'AIPAC is so toxic they pretend they're not in our race'; Biss attacked Fine for accepting AIPAC donor money" },
+      { "topic": "Wild Card: Phil Andrew", "summary": "21-year FBI veteran, shot by mass shooter in 1988, lobbied for Brady Bill. Pledged 10-year term limit. Endorsed by Steve Kerr" }
+    ]
+  }
+}
