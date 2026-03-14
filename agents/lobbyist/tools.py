@@ -18,6 +18,13 @@ def _load_json(filename: str) -> Any:
         return json.load(f)
 
 
+def _get_all_candidates() -> list[dict]:
+    """Load and normalize the candidates list."""
+    raw = _load_json("candidates.json")
+    candidates = raw.get("candidates", raw) if isinstance(raw, dict) else raw
+    return candidates if isinstance(candidates, list) else []
+
+
 # ── State-level data ─────────────────────────────────────────────────────
 
 def get_state(abbr: str) -> dict | None:
@@ -81,25 +88,26 @@ def get_districts_for_state(abbr: str) -> list[dict]:
 
 def get_candidates_for_district(district_code: str) -> list[dict]:
     """Return all filed candidates for a district (e.g. 'TX-31')."""
-    raw = _load_json("candidates.json")
-    candidates = raw.get("candidates", raw) if isinstance(raw, dict) else raw
-    if not isinstance(candidates, list):
-        return []
     return [
-        c for c in candidates
+        c for c in _get_all_candidates()
         if (c.get("district") or "").upper() == district_code.upper()
     ]
 
 
 def get_candidates_for_state(abbr: str) -> list[dict]:
     """Return all filed candidates in a state."""
-    raw = _load_json("candidates.json")
-    candidates = raw.get("candidates", raw) if isinstance(raw, dict) else raw
-    if not isinstance(candidates, list):
-        return []
     return [
-        c for c in candidates
+        c for c in _get_all_candidates()
         if (c.get("state") or "").upper() == abbr.upper()
+    ]
+
+
+def search_candidates(name: str) -> list[dict]:
+    """Search for candidates by name (case-insensitive substring match)."""
+    needle = name.upper()
+    return [
+        c for c in _get_all_candidates()
+        if needle in (c.get("name") or "").upper()
     ]
 
 
@@ -131,6 +139,59 @@ def get_trends_for_district(district_code: str) -> dict | None:
     """Return search-interest trends for a district."""
     trends = _load_json("trends-by-district.json")
     return trends.get(district_code.upper())
+
+
+# ── Election administration ──────────────────────────────────────────────
+
+def get_election_admin(abbr: str) -> dict | None:
+    """Return EAC election administration data for a state.
+
+    Includes registered voters, new registrations, mail ballot stats,
+    provisional ballot counts, and rejection reasons.
+    """
+    eac = _load_json("eac-election-admin.json")
+    return eac.get(abbr.upper())
+
+
+# ── Officials news ───────────────────────────────────────────────────────
+
+def get_officials_news(abbr: str) -> dict | None:
+    """Return recent news coverage for officials in a state.
+
+    Includes article count, top issues, sentiment, top officials,
+    and recent article summaries.
+    """
+    news = _load_json("officials-news.json")
+    return news.get(abbr.upper())
+
+
+# ── Cross-reference queries ──────────────────────────────────────────────
+
+def find_competitive_tax_districts(abbr: str) -> list[dict]:
+    """Find competitive districts in a state where the member sits on tax-relevant committees.
+
+    Competitive = winner margin under 10%. Tax-relevant = committees string
+    contains 'Ways and Means', 'Finance', 'Budget', or 'Appropriations'.
+    """
+    TAX_KEYWORDS = ("ways and means", "finance", "budget", "appropriations", "tax")
+    districts = get_districts_for_state(abbr)
+    results = []
+    for d in districts:
+        margin = d.get("winner_margin_pct_2024") or d.get("winner_margin_pct_2022")
+        committees = (d.get("committees") or "").lower()
+        is_competitive = margin is not None and abs(float(margin)) < 10
+        has_tax_committee = any(kw in committees for kw in TAX_KEYWORDS)
+        if is_competitive or has_tax_committee:
+            results.append({
+                "code": d.get("code", f"{d.get('state')}-{d.get('district_number')}"),
+                "member": d.get("member"),
+                "party": d.get("party"),
+                "committees": d.get("committees"),
+                "winner_margin_pct_2024": d.get("winner_margin_pct_2024"),
+                "competitive": is_competitive,
+                "tax_committee": has_tax_committee,
+            })
+    return results
 
 
 # ── Tool registry (for agent tool-use loop) ──────────────────────────────
@@ -166,6 +227,11 @@ TOOLS: dict[str, dict] = {
         "description": "Get all filed candidates in a state.",
         "parameters": {"abbr": "Two-letter state code"},
     },
+    "search_candidates": {
+        "function": search_candidates,
+        "description": "Search for candidates by name (case-insensitive substring match) across all states.",
+        "parameters": {"name": "Full or partial candidate name to search for"},
+    },
     "get_politician_issues": {
         "function": get_politician_issues,
         "description": "Get politician issue positions and statewide themes for a state.",
@@ -180,5 +246,20 @@ TOOLS: dict[str, dict] = {
         "function": get_trends_for_district,
         "description": "Get search-interest trends for a district.",
         "parameters": {"district_code": "District code like 'CA-34'"},
+    },
+    "get_election_admin": {
+        "function": get_election_admin,
+        "description": "Get EAC election administration data (voter registration, mail ballots, provisional ballots) for a state.",
+        "parameters": {"abbr": "Two-letter state code"},
+    },
+    "get_officials_news": {
+        "function": get_officials_news,
+        "description": "Get recent news coverage for officials in a state (article count, top issues, sentiment, recent articles).",
+        "parameters": {"abbr": "Two-letter state code"},
+    },
+    "find_competitive_tax_districts": {
+        "function": find_competitive_tax_districts,
+        "description": "Find districts in a state that are competitive (<10% margin) or have members on tax-relevant committees. Great for identifying lobbying targets.",
+        "parameters": {"abbr": "Two-letter state code"},
     },
 }
