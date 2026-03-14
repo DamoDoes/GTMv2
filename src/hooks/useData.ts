@@ -56,7 +56,7 @@ export function useData(): DataStore {
       fetchJSON<Record<string, StateData>>("/data/states.json"),
       fetchJSON<DistrictMeta[]>("/data/districts-meta.json"),
       fetchJSON<CampusGeoJSON>("/data/campuses.geojson"),
-      fetchJSON<Candidate[]>("/data/candidates.json"),
+      fetchJSON<Record<string, unknown>>("/data/candidates.json"),
       fetchJSON<Record<string, unknown>>("/data/primaries.json"),
       fetchJSON<PoliticianIssues>("/data/politician-issues.json"),
       fetchJSON<ProtestEvent[]>("/data/protest-activity.json"),
@@ -81,8 +81,13 @@ export function useData(): DataStore {
           trendsByDistrict,
           officialsNews,
         ]) => {
-          // Normalize candidates — handle both formats
-          const normalizedCandidates = candidates.map((c: Record<string, unknown>) => ({
+          // Normalize candidates — handle both formats (object with .candidates key or array)
+          const rawCandidates: Record<string, unknown>[] = Array.isArray(candidates)
+            ? candidates
+            : Array.isArray((candidates as Record<string, unknown>).candidates)
+            ? (candidates as Record<string, unknown>).candidates as Record<string, unknown>[]
+            : [];
+          const normalizedCandidates = rawCandidates.map((c: Record<string, unknown>) => ({
             candidate_id: (c.candidate_id || c.fec_candidate_id || "") as string,
             name: (c.name || c.candidate_name_fec_filing_name || "") as string,
             office: (c.office || "") as string,
@@ -100,14 +105,34 @@ export function useData(): DataStore {
             ...c,
           })) as Candidate[];
 
+          // Filter out _meta keys from states
+          const cleanStates: Record<string, StateData> = {};
+          for (const [k, v] of Object.entries(states)) {
+            if (!k.startsWith('_') && typeof v === 'object' && v !== null) {
+              cleanStates[k] = v as StateData;
+            }
+          }
+
           setData({
-            states,
-            districts: Array.isArray(districts) ? districts : Object.values(districts),
+            states: cleanStates,
+            districts: Array.isArray(districts)
+              ? districts
+              : Array.isArray((districts as Record<string, unknown>).districts)
+              ? ((districts as Record<string, unknown>).districts as DistrictMeta[])
+              : (Object.values(districts) as DistrictMeta[]).flat(),
             campuses: campusGeo.features,
             candidates: normalizedCandidates,
             primaries,
             politicianIssues,
-            protests: Array.isArray(protests) ? protests : [],
+            protests: Array.isArray(protests)
+              ? protests
+              : Object.entries(protests as Record<string, unknown>)
+                  .filter(([k]) => k !== '_meta' && k !== '_national')
+                  .flatMap(([state, events]) =>
+                    Array.isArray(events)
+                      ? events.map((e: Record<string, unknown>) => ({ ...e, state } as ProtestEvent))
+                      : []
+                  ),
             fecContributions,
             raceIssues,
             eacAdmin,

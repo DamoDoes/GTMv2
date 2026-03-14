@@ -12,6 +12,13 @@ interface Props {
   onStateSelect: (abbr: string | null) => void;
 }
 
+// Safely render a value - if it's an object, return "—"
+function safeStr(v: unknown): string {
+  if (v == null) return "—";
+  if (typeof v === "object") return "—";
+  return String(v);
+}
+
 export default function DetailPanel({ scored, data, filters, onDistrictSelect, onStateSelect }: Props) {
   const selectedScored = useMemo(
     () => scored.find((s) => s.abbr === filters.selectedState),
@@ -210,11 +217,11 @@ export default function DetailPanel({ scored, data, filters, onDistrictSelect, o
         <div className="text-[9px] font-mono uppercase text-[var(--text-muted)] mb-2">Key Metrics</div>
         <div className="grid grid-cols-2 gap-2">
           {[
-            { label: "Cook PVI", value: sd.cookPVI as string },
-            { label: "Midterm Turnout", value: formatPct(sd.midtermTurnout2022 as number) },
-            { label: "Urban Pop", value: formatPct(sd.urbanPopPct as number) },
-            { label: "EITC Unclaimed", value: formatPct(sd.eitcUnclaimedRate as number) },
-            { label: "Fed Tax Paid", value: `$${sd.totalFedTaxPaidB}B` },
+            { label: "Cook PVI", value: safeStr(sd.cookPVI) },
+            { label: "Midterm Turnout", value: typeof sd.midtermTurnout2022 === "number" ? formatPct(sd.midtermTurnout2022) : "—" },
+            { label: "Urban Pop", value: typeof sd.urbanPopPct === "number" ? formatPct(sd.urbanPopPct as number) : "—" },
+            { label: "EITC Unclaimed", value: typeof sd.eitcUnclaimedRate === "number" ? formatPct(sd.eitcUnclaimedRate as number) : "—" },
+            { label: "Fed Tax Paid", value: typeof sd.totalFedTaxPaidB === "number" ? `$${sd.totalFedTaxPaidB}B` : "—" },
             { label: "Young Profs", value: formatNumber(sd.youngProfessionalPop as number) },
             { label: "CC Enrollment", value: formatNumber(sd.collegeEnrollment as number) },
             { label: "Adult Pop", value: formatNumber(sd.adultPop18 as number) },

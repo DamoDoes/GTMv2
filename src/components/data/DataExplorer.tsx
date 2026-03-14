@@ -220,7 +220,7 @@ export default function DataExplorer({ data, scored, filters, onStateSelect, onD
                       )}
                     </td>
                     <td className="px-2 py-1.5 text-xs font-mono text-[var(--text-muted)]">
-                      {s.data.cookPVI as string}
+                      {typeof s.data.cookPVI === 'string' ? s.data.cookPVI : '—'}
                     </td>
                   </tr>
                 ))}
