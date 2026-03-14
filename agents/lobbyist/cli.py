@@ -4,6 +4,9 @@ Usage:
     python -m agents.lobbyist.cli "What federal spending goes to CA-34?"
     python -m agents.lobbyist.cli --verbose "Who are the senators in Texas?"
     python -m agents.lobbyist.cli  # interactive mode
+
+In interactive mode, paste multi-line prompts freely. Press Enter twice
+(blank line) to submit, or just type a single line and press Enter once.
 """
 
 from __future__ import annotations
@@ -11,6 +14,46 @@ from __future__ import annotations
 import sys
 
 from agents.lobbyist.agent import LobbyistAgent
+
+
+def _read_multiline(prompt: str = "> ") -> str | None:
+    """Read input that supports multi-line paste.
+
+    A single line followed by Enter submits immediately.
+    For multi-line input (paste), a blank line terminates.
+    """
+    try:
+        first = input(prompt)
+    except (EOFError, KeyboardInterrupt):
+        return None
+
+    # Check if more lines are waiting (multi-line paste)
+    lines = [first]
+    if not sys.stdin.isatty():
+        # Piped input: read until EOF
+        for line in sys.stdin:
+            lines.append(line.rstrip("\n"))
+        return "\n".join(lines).strip() or None
+
+    # Interactive: read additional lines until a blank line
+    import select
+    while True:
+        # On Unix, check if input is already buffered (paste)
+        try:
+            ready, _, _ = select.select([sys.stdin], [], [], 0.05)
+        except (ValueError, OSError):
+            break
+        if not ready:
+            break
+        try:
+            line = input()
+        except (EOFError, KeyboardInterrupt):
+            break
+        if not line:
+            break
+        lines.append(line)
+
+    return "\n".join(lines).strip() or None
 
 
 def main() -> None:
@@ -26,14 +69,12 @@ def main() -> None:
     else:
         # Interactive REPL
         print("Lobbyist Agent (type 'quit' to exit)")
+        print("Paste multi-line prompts freely; blank line or Enter submits.")
         print("-" * 40)
         while True:
-            try:
-                query = input("\n> ").strip()
-            except (EOFError, KeyboardInterrupt):
+            query = _read_multiline("\n> ")
+            if query is None or query.lower() in ("quit", "exit", "q"):
                 print()
-                break
-            if not query or query.lower() in ("quit", "exit", "q"):
                 break
             print()
             print(agent.run(query, verbose=verbose))
