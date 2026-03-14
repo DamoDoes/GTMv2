@@ -6,3 +6,5 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 fetch_states.py
+__pycache__/
+*.pyc
